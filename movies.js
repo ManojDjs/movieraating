@@ -10,7 +10,7 @@ function join_array(ratings){
 async function getmovieslist(searchterm){
     const title=searchterm;
     const apikey="ed992f4e";
-    const movies=await fetch("http://www.omdbapi.com/?s="+title+"&apikey="+apikey).then((Response)=>{
+    const movies=await fetch("https://www.omdbapi.com/?s="+title+"&apikey="+apikey).then((Response)=>{
     if(!Response.ok){
         throw new Error("erroe");
       }
